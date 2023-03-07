@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7",
-    "supertest": "^6.3.3" // after running the command npm install supertest --save-dev to instal the supertest module
+    "supertest": "^6.3.3"
   }
 }
