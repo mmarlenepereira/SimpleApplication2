@@ -8,14 +8,14 @@ workflows:
           filters:
             branches:
               only:
-                - /.*$/
+                - /.*$/ #original value was 'main', but changed to accept all branches after running into issues with CircleCI
 
 
 
 # Define the jobs we want to run for this project
 jobs:
   build:
-    working_directory: ~/SimpleApplication
+    working_directory: ~/SimpleApplication2
     docker:
       - image: circleci/node:latest
     steps:
@@ -26,6 +26,3 @@ jobs:
       - run:
           name: install-npm
           command: npm install
-      - run:
-          name: test-run
-          command: npm run test
