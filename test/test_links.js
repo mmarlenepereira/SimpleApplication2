@@ -1,7 +1,7 @@
 //code to test links
 
 const request = require('supertest');
-//const app = require('../SimpleApplication2');
+const app = require('../SimpleApplication2');
 
 describe('Test Links', function () {
   it('should return 200 for the Home page', function (done) {
