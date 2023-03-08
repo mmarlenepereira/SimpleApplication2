@@ -43,5 +43,4 @@ jobs:
     steps:
       - run:
           name: deploy-application
-          command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_PUBLIC_DNS "rm -rf SimpleApplication2/;git clone https://github.com/mmarlenepereira/SimpleApplication2.git; source SimpleApplication2/deploy.sh"
-#CREATED EC2PUBLIC DNS
+          command: ssh -i /Users/mariamarlene.pereira/Downloads/devops.pem $EC2_USERNAME@$EC2_PUBLIC_DNS "rm -rf SimpleApplication2/;git clone https://github.com/mmarlenepereira/SimpleApplication2.git; source SimpleApplication2/deploy.sh"

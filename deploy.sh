@@ -7,10 +7,10 @@ sudo apt update && sudo apt install nodejs npm
 sudo npm install -g pm2
 
 # stop any instance of our application running currently
-pm2 stop simpleapplication2
+pm2 stop SimpleApplication2
 
 # change directory into folder where application is downloaded
-cd simpleapplication2
+cd SimpleApplication2
 
 # Install application dependancies
 npm install
@@ -19,4 +19,4 @@ npm install
 # echo $SERVER > server.crt
 
 # Start the application with the process name example_app using pm2
-pm2 start ./bin/www --name simpleapplication2
+pm2 start ./bin/www --name SimpleApplication2
