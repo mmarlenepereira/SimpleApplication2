@@ -5,13 +5,27 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <ul>
+    <ul id="list">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
-      <li>add more...</li>
     </ul>
-    <br/>
+    <br>
+    <button onclick="addItem()">Add more</button>
+    <br>
     <a href="/about">About</a> | <a href="/contact">Contact</a>
+
+    <script>
+      function addItem() {
+        var item = prompt("Enter item:");
+        if (item != null && item != "") {
+          var list = document.getElementById("list");
+          var newListItem = document.createElement("li");
+          var text = document.createTextNode(item);
+          newListItem.appendChild(text);
+          list.appendChild(newListItem);
+        }
+      }
+    </script>
   </body>
 </html>
