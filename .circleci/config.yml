@@ -9,6 +9,11 @@ workflows:
             branches:
               only:
                 - /.*$/ #original value was 'main', but changed to accept all branches after running into issues with CircleCI
+      - deploy:
+          filters:
+            branches:
+              only:
+                - /.*$/
 
 
 
