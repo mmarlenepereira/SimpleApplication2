@@ -1,4 +1,23 @@
 body {
+    background-color: #d0caca;
+    font-family: Arial, sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+body {
     background-color: #d9d0d0;
     font-family: Arial, sans-serif;
     margin-top: 25px;
