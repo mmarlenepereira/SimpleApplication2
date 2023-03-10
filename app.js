@@ -8,6 +8,10 @@ var aboutRouter = require('./routes/about');
 var contactRouter = require('./routes/contact');
 var app = express();
 
+
+// serve static files
+app.use(express.static('public'));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
