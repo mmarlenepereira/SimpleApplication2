@@ -5,7 +5,7 @@ describe('HTTPS redirection', function() {
   it('should redirect HTTP requests to HTTPS', function(done) {
     request(app)
       .get('/')
-      .set('Host', 'example.com')
+      .set('Host', '3.238.150.122:8443')
       .expect(301)
       .end(function(err, res) {
         if (err) return done(err);
@@ -17,7 +17,7 @@ describe('HTTPS redirection', function() {
   it('should return HTTPS response', function(done) {
     request(app)
       .get('/')
-      .set('Host', 'example.com')
+      .set('Host', '3.238.150.122:8443')
       .expect(200)
       .end(function(err, res) {
         if (err) return done(err);
