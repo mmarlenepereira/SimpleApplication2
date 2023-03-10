@@ -1,5 +1,6 @@
 const request = require('supertest');
 const app = require('../app');
+const expect = require('expect');
 
 describe('HTTPS redirection', function() {
   it('should redirect HTTP requests to HTTPS', function(done) {
