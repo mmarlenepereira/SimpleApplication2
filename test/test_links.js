@@ -1,4 +1,4 @@
-//code to test if https requests return a 200 status
+//tests links
 
 const request = require('supertest');
 const app = require('../app');

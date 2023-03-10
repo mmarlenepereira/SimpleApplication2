@@ -1,9 +1,11 @@
+// tests mailto functionality in the Contact page
+
 const request = require('supertest');
 const app = require('../app');
 const should = require('should');
 
 describe('Test Mailto Link', function () {
-  it('should return a contact page with a valid mailto link', function (done) {
+  it('should return a Contact page with a valid mailto link', function (done) {
     request(app)
       .get('/contact')
       .expect(200)
