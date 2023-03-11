@@ -1,4 +1,4 @@
-// tests mailto functionality in the Contact page
+// test mailto functionality in the Contact page
 
 const request = require('supertest');
 const app = require('../app');
