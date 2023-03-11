@@ -1,5 +1,5 @@
 body {
-  background-color: #f8f2f2;
+  background-color: #f1ebeb;
   font-family: 'Courier New', Courier, monospace;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -8,32 +8,13 @@ body {
 }
 
 h1 {
-  font-size: 25px;
-  font-weight: bold;
-
-}
-
-p {
-  font-size: 15px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-body {
-  background-color: #d9d0d0;
-  font-family: Arial, sans-serif;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 25px;
-}
-
-h1 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   text-align: left;
 }
 
 p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 10px;
 }
